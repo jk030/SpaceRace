@@ -4,14 +4,13 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    background-color: #c4a3ff;
+    background-image: linear-gradient(to left, violet,  #c4a3ff);
   }
 
 h1 {
   font-size: 50px ;
   color: #9c289c;
   font-weight: 400;
-
 }
 
 .scoreboard {
@@ -21,7 +20,6 @@ flex-direction: row;
 flex-wrap: nowrap;
 height: 10vh;  
 width: auto; 
-
 }
 
 .box{
@@ -35,7 +33,6 @@ width: auto;
   color: rgb(156, 40, 156);
   font-size: 22px;
   font-weight: 10px;
-
 }
 
 .scoreboard_name{
@@ -45,10 +42,7 @@ width: auto;
 
 .rainbow_score{
   justify-content: center;
-
 }
-
-
 
 button{
   background-color: rgb(156, 40, 156);
@@ -58,9 +52,7 @@ button{
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
+  border-radius: 4px;
 }
 
-/* padding: 10px;
-text-align: center;
-justify-content: space-between;
-flex-direction: row; */
+

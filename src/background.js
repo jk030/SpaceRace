@@ -1,5 +1,4 @@
 class Background {
-
     draw(){        
         game.backgroundImage.forEach(function (img) {
 			img.x -= img.speed
@@ -8,6 +7,5 @@ class Background {
 			if (img.x <= - width) 
             img.x = 0
 		})
-    } 
-    
+    }     
 }

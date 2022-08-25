@@ -125,7 +125,7 @@ class Game {
       if (frameCount - this.frameCount < 100) {
         fill(156, 40, 156);
         textAlign(CENTER);
-        text("Next Space Level 🌟", 300, 300);
+        text("Next Space Level ", 300, 300);
         textSize(50);
       }
     }
@@ -153,7 +153,7 @@ class Game {
     textAlign(CENTER);
     textSize(40);
     fill(178, 38, 217);
-    text("GAME OVER 🫠!", width / 2, height / 2 );
+    text("GAME OVER !", width / 2, height / 2 );
     text("press 'ENTER' to replay", 300, 360);
     noLoop(); // game is over, stop game
     sound.pause();
@@ -166,7 +166,7 @@ class Game {
     textAlign(CENTER);
     textSize(40);
     fill(255);
-    text("you WON 🏆!", width / 2, height / 2 - 60);
+    text("you WON !", width / 2, height / 2 - 60);
     text("press 'ENTER' to replay", 300, 300);
     noLoop();
   }

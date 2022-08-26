@@ -4,7 +4,6 @@ let sound;
 let button;
 let soundGameOver;
 let mode; // https://www.youtube.com/watch?v=TgHhEzKlLb4
-let buttonImg;
 let fontRegular
 
 function preload() {
@@ -14,9 +13,6 @@ function preload() {
   soundGameOver = loadSound("assets/sound/mixkit-retro-arcade-game-over-470.wav" );
   soundCoin = loadSound("assets/sound/mixkit-arcade-game-jump-coin-216.wav");
   soundNextLevel = loadSound( "assets/sound/mixkit-arcade-game-complete-or-approved-mission-205.wav" );
-  buttonImg = loadImage("assets/background/NebulaRed.png");
-  
-  
 }
 
 function setup() {
@@ -29,8 +25,6 @@ function setup() {
   sound.play();
   button.mousePressed(togglePlaying);
   preventScrolling();
- 
- 
 }
 
 function togglePlaying() {
@@ -61,12 +55,13 @@ function draw() {
   
   if (mode == 0) {
     background(232, 214, 239);
+    rect(50, 150, 500, 300, 40)
     textSize(30);
-    text("Ready for your magical SpaceRace? ", 300, 280);
-    fill(153, 50, 204);
+    fill(232, 214, 239);
+    text("Ready for your magical SpaceRace? ", 110, 230, 400);
     textAlign(CENTER);
     textSize(20);
-    text("Your goal is to collect as many RAINBOWS as possible! \n But watch out for CYCLONES! \n Once you click SHIFT, control the unicorn  \n using up, right, down and left.", 300, 340);
+    text("Your goal is to collect as many RAINBOWS as possible! \n But watch out for CYCLONES! \n Once you click SHIFT, control the unicorn  \n using up, right, down and left.", 50, 320, 500);
     fill(156, 40, 156);
     // text("Your goal is to collect as many 🌈 as possible!", 300, 340);
     // text("But watch out for cyclones!", 300, 400);

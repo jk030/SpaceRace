@@ -13,8 +13,6 @@ class ObstacleDynamic {
     // this increases the speed of the coins
     this.x = this.x - this.speedLevelObstacle;
 
-    // this.y = this.y - this.obstacleInterval
-
     image(this.image, this.x, this.y, 100, 100);
   }
 

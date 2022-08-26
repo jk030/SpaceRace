@@ -55,4 +55,14 @@ button{
   border-radius: 4px;
 }
 
+.arrows{
+  flex-direction: right;
+  margin-left: auto;
+  width: 400px;
+  height: 0px;
+}
 
+.resize{
+  width: 200px;
+  height: 200px;
+}
